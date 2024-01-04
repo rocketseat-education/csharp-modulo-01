@@ -1,1 +1,6 @@
 ﻿namespace HelloWorld;
+
+class Program
+{
+
+}
