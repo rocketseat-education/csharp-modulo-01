@@ -1,13 +1,19 @@
-﻿namespace HelloWorld;
+﻿using HelloWorld.Teste;
+
+namespace HelloWorld;
 
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Olá, mundooooo!");
+        Carro meuCarro = new Carro();
 
-        Console.WriteLine("Eu sou Welisson!");
+        meuCarro.Ligar();
 
-        Console.WriteLine("Eu sou o Goku!");
+        meuCarro.Desligar();
+
+        Biscoito meuBiscoito = new Biscoito();
+
+        meuBiscoito.Temperatura();
     }
 }
