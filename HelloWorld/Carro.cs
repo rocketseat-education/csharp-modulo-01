@@ -1,5 +1,5 @@
 ﻿namespace HelloWorld;
-class Carro
+internal class Carro
 {
     public void Ligar()
     {
@@ -9,5 +9,16 @@ class Carro
     public void Desligar()
     {
         Console.WriteLine("Carro DESLIGADO");
+    }
+
+    private void Teste1()
+    {
+        Console.WriteLine("Teste 1");
+    }
+
+    internal void Teste2()
+    {
+        Teste1();
+        Console.WriteLine("Teste 2");
     }
 }
