@@ -4,30 +4,25 @@ class Program
 {
     static void Main()
     {
-        /* Início da aula
+        List<int> inteiros = new List<int>();
 
-        int[] inteiros = new int[10];
+        inteiros.Add(1); // index: 0
+        inteiros.Add(2); // index: 1
 
-        inteiros[0] = 1;
-        inteiros[1] = 10;
-        inteiros[2] = 7;
-        
+        // Primeiro elemento da lista:
+        int primeiroElemento = inteiros.First();
 
-        int[] inteiros = [1, 10, 7];
+        // Último elemento da lista:
+        int ultimoElemento = inteiros.Last();
 
-        Console.WriteLine(inteiros[0]);
-        Console.WriteLine(inteiros[1]);
-        Console.WriteLine(inteiros[2]);
+        int primeiroElemento1 = inteiros.ElementAt(0);
 
-        */
+        inteiros.RemoveAt(0);
 
-        int[,] inteiros = new int[10, 10];
-        inteiros[0,0] = 1;
-        inteiros[0,3] = 2;
+        // Remove todos os elementos da lista:
+        inteiros.Clear();
 
-        Console.WriteLine(inteiros[0, 0]);
-        Console.WriteLine(inteiros[0, 1]);
-        Console.WriteLine(inteiros[0, 2]);
-        Console.WriteLine(inteiros[0, 3]);
+        Console.WriteLine(inteiros.Count);
+        Console.WriteLine(primeiroElemento1);
     }
 }
