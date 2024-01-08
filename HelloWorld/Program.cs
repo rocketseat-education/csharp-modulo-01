@@ -2,20 +2,14 @@
 
 class Program
 {
-
-    enum NivelDeDificuldade
-    {
-        Baixo = 0,
-        Medio = 1,
-        Alto = 2
-    }
     static void Main()
     {
-      NivelDeDificuldade nivel = NivelDeDificuldade.Alto;
+        string nome = "Welisson Arley";
+        int meuNumero = 7;
 
-        int nivelInteiro = (int)nivel;
+        var nome2 = "Welisson Arley";
 
-        Console.WriteLine(nivel);
-        Console.WriteLine(nivelInteiro);
+        string meuSobrenome;
+        var variavel = DateTime.Now;
     }
 }
