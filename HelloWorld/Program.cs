@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        var resultado = Math.Cbrt(8);
-        Console.WriteLine(resultado);
-
-
         var matematica = new OperacoesMatematicas();
-        matematica.Restante(valor1: 8, valor2: 3);
+
+        (int resultado, string nome) = matematica.Adicionar(valor1: 7, valor2: 1);
+
+        Console.WriteLine(resultado);
+        Console.WriteLine(nome);
     }
 }
