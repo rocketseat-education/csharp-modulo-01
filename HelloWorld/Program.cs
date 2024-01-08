@@ -4,35 +4,24 @@ class Program
 {
     static void Main()
     {
-        /* Código com os exemplos de Listas do início da aula:
+       /* Exemplo 1:
+       Dictionary<int, string> dicionario = new Dictionary<int, string>();
+       dicionario.Add(1, "Welisson");
+       dicionario.Add(58, "Edilaine");
+       dicionario.Add(7, "Willian");
 
-        List<string> strings = new List<string>();
-        strings.Add("Hello!");
-        strings.Add("Mundo");
+       string value = dicionario[2];
+       */
 
-        List<int> ints = new List<int>();
-        ints.Add(1);
+        Dictionary<string, int> dicionario = new Dictionary<string, int>();
+        dicionario.Add("Welisson", 1);
+        dicionario.Add("Edilaine", 0);
+        dicionario.Add("Willian", 7);
 
-        List<decimal> decimals = new List<decimal>();
-        decimals.Add(2.5m);
+        int value = dicionario["Welisson"];
+        bool existe = dicionario.ContainsKey("Welisson");
 
-        List<bool> bools = new List<bool>();
-        bools.Add(true);
-
-        List<object> objetos = new List<object>();
-
-        objetos.Add("Hello");
-        objetos.Add(7);
-        objetos.Add(true);
-
-        */
-
-        List<string> strings = new List<string>();
-        strings.Add("Hello");
-        strings.Add("Mundo");
-
-        string resultado = string.Join(" ", strings);
-
-        Console.WriteLine(resultado);
+        Console.WriteLine(value);
+        Console.WriteLine(existe);
     }
 }
