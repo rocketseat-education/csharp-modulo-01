@@ -3,31 +3,12 @@
 class Program
 {
     static void Main()
-    {
-        /* ⦁ Primeira maneira de fazer:
+    { 
+        var carro1 = new Carro("Carro 1");
 
-        var carro = new Carro();
+        var carro2 = new Carro("Carro 2");
 
-        carro.Modelo = "Lamborghini";
-        carro.Cor = Cor.Vermelho;
-        carro.LancadoEm = new DateOnly(2021, 01, 01);
-
-        carro.NomeDoModelo();
-       
-       */
-
-        var carro = new Carro("Lamborghini")
-        {
-            LancadoEm = new DateOnly(2021, 01, 01),
-            Cor = Cor.Azul
-        };
-
-        var carro2 = new Carro("Porsche")
-        {
-            LancadoEm = new DateOnly(2019, 01, 01),
-            Cor = Cor.Vermelho
-        };
-
-        carro.NomeDoModelo();
+        carro1.NomeDoModelo();
+        carro2.NomeDoModelo();
     }
 }

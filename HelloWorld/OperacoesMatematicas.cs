@@ -1,17 +1,8 @@
 ﻿namespace HelloWorld;
 
-public class OperacoesMatematicas
+public static class OperacoesMatematicas
 {
-    public (int resultadoDaAdicao, string autor) Adicionar(int valor1, int valor2)
-    {
-        var resultado = valor1 + valor2;
+    public static int Adicionar(int valor1, int valor2) => valor1 + valor2;
 
-        return (resultado, "welisson");
-    }
-
-    public void Teste(int valor1, int valor2 = 7, string autor = "Welisson")
-    {
-        Console.WriteLine(valor1 + valor2);
-        Console.WriteLine(autor);
-    }
+    public static int Subtrair() => 1;
 }
