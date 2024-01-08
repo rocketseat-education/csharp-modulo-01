@@ -4,25 +4,35 @@ class Program
 {
     static void Main()
     {
-        List<int> inteiros = new List<int>();
+        /* Código com os exemplos de Listas do início da aula:
 
-        inteiros.Add(1); // index: 0
-        inteiros.Add(2); // index: 1
+        List<string> strings = new List<string>();
+        strings.Add("Hello!");
+        strings.Add("Mundo");
 
-        // Primeiro elemento da lista:
-        int primeiroElemento = inteiros.First();
+        List<int> ints = new List<int>();
+        ints.Add(1);
 
-        // Último elemento da lista:
-        int ultimoElemento = inteiros.Last();
+        List<decimal> decimals = new List<decimal>();
+        decimals.Add(2.5m);
 
-        int primeiroElemento1 = inteiros.ElementAt(0);
+        List<bool> bools = new List<bool>();
+        bools.Add(true);
 
-        inteiros.RemoveAt(0);
+        List<object> objetos = new List<object>();
 
-        // Remove todos os elementos da lista:
-        inteiros.Clear();
+        objetos.Add("Hello");
+        objetos.Add(7);
+        objetos.Add(true);
 
-        Console.WriteLine(inteiros.Count);
-        Console.WriteLine(primeiroElemento1);
+        */
+
+        List<string> strings = new List<string>();
+        strings.Add("Hello");
+        strings.Add("Mundo");
+
+        string resultado = string.Join(" ", strings);
+
+        Console.WriteLine(resultado);
     }
 }
