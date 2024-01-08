@@ -1,33 +1,36 @@
-﻿namespace HelloWorld;
+﻿using System.Text;
+
+namespace HelloWorld;
 
 class Program
 {
     static void Main()
     {
-       /*
-       Variáveis do tipo TEXTO
-       char
-       string
-       */
+        /* 
+        Código da primeira parte da aula
 
-        char letra = 'a';
-        char numero = '1';
-        char caracter = '@';
-        char espaco = ' ';
+        string texto1 = "A primeira frase.";
+        string texto2 = "Segunda frase.";
 
-        string texto = "Este curso é muito bom!";
+        string paragrafo = texto1 + " " + 7 + " " + true + " " + texto2;
+        string paragrafo2 = $"A primeira frase. {7} {true} Segunda frase.";
 
-        char primeiraLetraDoTexto = texto[0];
-        bool existe1 = texto.Contains("curso");
-        bool existe2 = texto.Equals("Este curso é muito bom!");
+        StringBuilder stringBuilder = new StringBuilder();
 
-        Console.WriteLine(existe1);
+        stringBuilder.AppendLine(paragrafo);
+        stringBuilder.AppendLine(paragrafo2);
 
-        string meuNome = "      Welisson Dev      ";
-        string nomeSemEspaco = meuNome.Trim();
+        string resultado = stringBuilder.ToString();
 
-        bool comecaComALetraW = nomeSemEspaco.StartsWith("W");
-        bool terminaComALetraV = nomeSemEspaco.EndsWith("v");
-        string textoAposReplace = nomeSemEspaco.Replace('e', '7');
+        string caminho = @"C:\teste";
+
+        Console.WriteLine(resultado);
+        */
+
+        string texto = "O usuário {0} gosta do número {1}!";
+
+        string resultado = string.Format(texto, "Welisson", 7);
+
+        Console.WriteLine(resultado);
     }
 }
