@@ -4,12 +4,9 @@ class Program
 {
     static void Main()
     {
-        string nome = "Welisson Arley";
-        int meuNumero = 7;
+        // object minhaVariavel = new Carro();
+        var minhaVariavel = new Carro();
 
-        var nome2 = "Welisson Arley";
-
-        string meuSobrenome;
-        var variavel = DateTime.Now;
+        minhaVariavel.Ligar();
     }
 }
