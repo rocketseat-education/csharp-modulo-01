@@ -1,13 +1,15 @@
 ﻿namespace HelloWorld;
-internal class Carro
+public class Carro
 {
-    public void Ligar()
+    public string Modelo { get; set; }
+    public DateOnly LancadoEm { get; set; }
+    public Cor Cor { get; set; }
+
+    /* Construtor para a classe */
+    public Carro(string modelo)
     {
-        Console.WriteLine("Carro LIGADO");
-    }
-    public void Desligar()
-    {
-        Console.WriteLine("Carro DESLIGADO");
+        Modelo = modelo;
     }
 
+    public void NomeDoModelo() => Console.WriteLine(Modelo);
 }
