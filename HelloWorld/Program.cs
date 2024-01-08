@@ -4,8 +4,11 @@ class Program
 {
     static void Main()
     {
-        var matematica = new OperacoesMatematicas();
+        var resultado = Math.Cbrt(8);
+        Console.WriteLine(resultado);
 
-        matematica.Subtrair(valor1: 1, valor2: 7);
+
+        var matematica = new OperacoesMatematicas();
+        matematica.Restante(valor1: 8, valor2: 3);
     }
 }

@@ -15,4 +15,24 @@ public class OperacoesMatematicas
 
         Console.WriteLine(resultado);
     }
+
+    public void Dividir(double valor1, double valor2)
+    {
+        var resultado = valor1 / valor2;
+
+        Console.WriteLine(resultado);
+    }
+    public void Multiplicar(int valor1, int valor2)
+    {
+        var resultado = valor1 * valor2;
+
+        Console.WriteLine(resultado);
+    }
+
+    public void Restante(int valor1, int valor2)
+    {
+        var resultado = valor1 % valor2;
+
+        Console.WriteLine(resultado);
+    }
 }
