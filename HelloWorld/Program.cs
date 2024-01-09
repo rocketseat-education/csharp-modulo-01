@@ -4,17 +4,19 @@ class Program
 {
     static void Main()
     {
-        var numero = 10;
+        var numero = 0;
 
-        do
+        while (numero < 100)
         {
-            Console.WriteLine("Teste");
+            if (numero == 5) 
+            {
+                break;
+            }
 
+            Console.WriteLine(numero);
             numero++;
         }
-        while (numero < 10);
 
-        Console.WriteLine(numero);
-
+        Console.WriteLine("Aqui");
     }
 }
