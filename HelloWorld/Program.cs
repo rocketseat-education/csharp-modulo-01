@@ -4,20 +4,22 @@ class Program
 {
     static void Main()
     {
-        var numero = 0;
+        var texto = Teste(5);
 
-        while (numero < 10)
+        Console.WriteLine("texto");
+    }
+
+    static string Teste(int numero)
+    {
+        Console.WriteLine("Teste 1");
+    
+        if (numero == 5) 
         {
-            numero++;
-
-            if (numero == 5) 
-            {
-                continue;
-            }
-
-            Console.WriteLine(numero);
+            Console.WriteLine("Teste2");
+            return "Welisson";
         }
 
-        Console.WriteLine("Aqui");
+        Console.WriteLine("Teste 3");
+        return "Willian";
     }
 }
