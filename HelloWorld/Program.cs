@@ -4,12 +4,16 @@ class Program
 {
     static void Main()
     {
-        var lista = new List<string> { "Welisson", "Willian", "Edilaine" };
+        var numero = 0;
 
-        for (int i = 0; i < 10; i = i + 2)
+        while (numero < 10)
         {
-            Console.WriteLine(i);
+            Console.WriteLine("Teste");
+
+            numero++;
         }
+
+        Console.WriteLine("Saiu");
 
     }
 }
