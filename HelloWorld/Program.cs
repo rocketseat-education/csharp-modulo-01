@@ -24,44 +24,31 @@ class Program
             == Igualdade
             != Diferente
         */
-
-
-        /* Condições com o numero */
-        if (numero > 0)
+      
+        /* Usando o && */
+        if (cor == Cores.Azul && numero >= 0 && ativo)
         {
-            Console.WriteLine("Este número é POSITIVO");
-        }
-        else if (numero == 0)
-        {
-            Console.WriteLine("Este número é NEUTRO");
-        }
-        else
-        {
-            Console.WriteLine("Este número é NEGATIVO");
+            Console.WriteLine("Entrou no exemplo usando &&");
         }
 
-        /* Condições com o booleano */
-        if (ativo)
+        /* Usando o || */
+        if (cor == Cores.Vermelho || numero > 0)
         {
-            Console.WriteLine("ENTROUUU");
+            Console.WriteLine("Entrou no exemplo usando ||");
         }
 
-        /* Condições com a string */
-        if (autor.Equals("Welisson"))
-        {
-            Console.WriteLine("ENTROUUU");
-        }
 
-        /* Condições com a lista */
-        if (lista.Count > 0) 
-        {
-            Console.WriteLine("A lista tem pelo menos um valor!");
-        }
+        string mensagemDeErro = null;
 
-        /* Condições com o enum */
-        if (cor == Cores.Azul)
+        /* Usando o &&: Se a primeira condição for verdadeira, ele não segue verificando as outras */
+        if (mensagemDeErro is not null && mensagemDeErro.ToUpper().Equals("WELISSON"))
         {
-            Console.WriteLine("ENTROUUU");
+            Console.WriteLine("ENTROUUUU");
+        }
+        
+        if (numero == 0 && (saldo > 100.0 || ativo))
+        {
+            Console.WriteLine("ENTROUUUU");
         }
     }
 }
